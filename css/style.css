@@ -7,9 +7,31 @@ body {
     color: white;
 }
 
+:root {
+    --accent-color: rgb(60, 96, 173);
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
+
+
+/* Skip Link Styling */
+.skip-link {
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    color: black; 
+    padding: 5px 10px;
+    font-size: 10px; 
+    text-align: center;
+    display: inline-block;
+    width: 20%; 
+    text-decoration: none; 
+    z-index: 1000; 
+    margin: 0 auto;
+}
+
 
 /* Main container*/
 .main-container {
@@ -85,7 +107,7 @@ nav ul li a:hover{
     display: block;
 }
 
-img:hover{
+.wrapper img:hover{
     transform:scale(1.25);
 }
 
@@ -215,8 +237,8 @@ footer {
 
        /* Hero Image */
        .wrapper img {
-        width: 500px;
-        height: 500px; 
+        width: 100%;
+        height: 300px; 
         object-fit: cover; 
     }
 
@@ -233,18 +255,4 @@ footer {
     .planet img {
         width: 100%; 
         height: auto; 
-    }
-
-    .skip-link {
-        position: absolute;
-        top: -100px;
-        left: 0;
-        background: var(--accent-color);
-        color: white;
-        padding: 8px;
-        transition: top 0.3s;
-    }
-    
-    .skip-link:focus {
-        top: 0;
     }
