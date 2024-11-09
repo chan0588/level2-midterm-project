@@ -128,6 +128,7 @@ img:hover{
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: none;
 }
 
 h5 {
@@ -158,7 +159,7 @@ h5 {
     color: white;
 }
 
-.learn-more:hover {
+a:hover{
     background-color: green;
     border-radius: 30px;
 }
